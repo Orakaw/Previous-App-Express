@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  </head>
+  <body>
+    <h1>THE <span>GREATEST</span> <span class="toDo">"TO DO"</span><span class="list"> LIST</span><img src="mj.png" alt=""> </h1>
+    <section>
+      <form class="" action="/toDo" method="post">
+        <input type="text" name="toDoitem" value="" placeholder="Who's The GREATEST........">
+        <button type="submit" name="button" class="add" >Add To List</button>
+        <button type="button" name="button" class="remove" >Clear List</button>
+        <ul class="toDoList">
+          <%
+          for(let x=0; x<toDo.length; x++){
+            %>
+            <li class="itemHolder"><%= toDo[x].toDoitem %></li>
+          <%}
+
+          %>
+        </ul>
+        <span class="totalNumb"></span>
+      </form>
+    </section>
+
+
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+
+    </script>
+    <script src="main.js" type="text/javascript">
+
+    </script>
+
+
+  </body>
+</html>
